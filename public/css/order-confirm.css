@@ -1,0 +1,54 @@
+.order-confirmation-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.timeline-step {
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.timeline-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: -50%;
+    height: 4px;
+    background: #ccc;
+    width: 100%;
+    z-index: -1;
+}
+
+.timeline-step.active:not(:last-child)::after {
+    background: #00BFA5;
+}
+
+.timeline-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 auto 8px;
+    line-height: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+.timeline-step.active .timeline-icon {
+    background-color: #00BFA5;
+}
+
+.timeline-label {
+    font-size: 14px;
+}

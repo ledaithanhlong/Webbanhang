@@ -1,0 +1,60 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f3ef; /* màu nền nhẹ nhàng hơn */
+    margin: 0;
+    padding: 0;
+    color: #4b3d33; /* nâu đậm nhẹ */
+}
+
+.container {
+    max-width: 700px;
+    margin: 80px auto;
+    background-color: #fffdf9; /* trắng kem */
+    padding: 40px;
+    box-shadow: 0 4px 16px rgba(176, 146, 106, 0.2); /* bóng màu nâu nhạt */
+    border-radius: 12px;
+    text-align: center;
+}
+
+h1 {
+    background-color: transparent;
+    color: #B0926A; /* dùng màu nâu pastel chủ đạo */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    color: #6b5847; /* nâu nhạt hơn */
+    margin-bottom: 30px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.admin-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #B0926A; /* màu nền chính */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.admin-button:hover {
+    background-color: #967a50; /* tối hơn một chút khi hover */
+}
+
+.admin-button.logout {
+    background-color: #a26757; /* đỏ nâu trầm */
+}
+
+.admin-button.logout:hover {
+    background-color: #874e43; /* đậm hơn khi hover */
+}
